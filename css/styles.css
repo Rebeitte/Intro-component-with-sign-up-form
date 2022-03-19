@@ -79,6 +79,7 @@ input {
 
 input:focus {
     outline-color: hsla(246, 25%, 77%);
+    color: var(--GrayishBlue);
 }
 
 .btn { 
@@ -94,9 +95,15 @@ input:focus {
 
 
 .btn a { 
-    color: rgb(255,255,255);
+    color: rgb(255,255,255, 0.8);
     text-decoration: none;
 }
+
+
+.btn span { 
+    font-weight: 700;
+}
+
 form p {
     margin-top: 1rem ;
     color: var(--GrayishBlue);
@@ -121,4 +128,56 @@ form span {
     font-weight: 500;
     box-shadow: 0;
     box-shadow: inset 0px -3px 0 rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    
+    body {
+       background-image: url("/images/bg-intro-desktop.png");
+    }
+    
+    main {
+        width: 120rem;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-right: 10rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin: 0 1rem 0 0;
+        line-height: 1.2;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    .information {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2rem;
+    }
+
+    form {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-right: 10rem;
+    }
+
+
 }
