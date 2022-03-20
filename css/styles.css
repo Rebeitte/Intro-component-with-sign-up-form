@@ -32,7 +32,7 @@ body {
 
 
 main {
-    width: 37.5rem;
+    width: 37rem;
     margin-top: 10%;
     padding: .5rem;
 }
@@ -77,6 +77,7 @@ input {
     font-size: 1.3rem;
     position: relative;
     display: block;
+    caret-color:var(--Red);
 }
 
 .terms {
