@@ -75,6 +75,41 @@ input {
     border: .1rem solid hsla(246, 25%, 77%, 0.3);
     font-weight: 600;
     font-size: 1.3rem;
+    position: relative;
+    display: block;
+}
+
+.terms {
+    display: block;
+}
+
+.error {
+    border: 1px solid var(--Red);
+}
+
+.error::placeholder {
+    background-image: url('/images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    color: #ffff;
+}
+
+.error_email {
+    display: none;
+}
+
+.error_email::placeholder {
+    color: var(--Red);
+}
+
+
+.alert {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    color: var(--Red);
+    display: none;
 }
 
 input:focus {
@@ -131,6 +166,26 @@ form span {
     cursor: pointer;
 }
 
+.submit:hover {
+    background-color: hsl(154, 59%, 51%, 0.8);
+}
+
+.submit:active {
+    animation-duration: 1s;
+    animation-name: boton;
+}
+
+@keyframes boton {
+    
+    from {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(.8)
+    }
+}
+
 @media (min-width: 768px) {
     
     body {
@@ -181,4 +236,8 @@ form span {
     }
 
 
+}
+
+.display {
+    display: block;
 }
