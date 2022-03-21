@@ -66,6 +66,7 @@ form {
     border-radius: .7rem;
     margin-bottom: 1rem;
     box-shadow: 0px 5px 0 rgb(0, 0, 0, 0.1);
+    position: relative;
 }
 
 input {
@@ -187,7 +188,7 @@ form span {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     
     body {
        background-image: url("/images/bg-intro-desktop.png");
@@ -236,8 +237,14 @@ form span {
         margin-top: 1rem;
     }
 
+    .submit {
+        font-weight: 700;
+    }
+
 
 }
+
+
 
 .display {
     display: block;
