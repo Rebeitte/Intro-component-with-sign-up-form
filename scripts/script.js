@@ -10,7 +10,10 @@ const lastname = document.getElementById("lastname");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const mail = document.querySelector('.error_email')
-let alert = document.querySelector('.alert')
+let alert_name = document.querySelector('.alert_name')
+let alert_lname = document.querySelector('.alert_lname')
+let alert_email = document.querySelector('.alert_email')
+let alert_password = document.querySelector('.alert_password')
 
 firstname.addEventListener('input', alldata);
 lastname.addEventListener('input', alldata);
@@ -29,7 +32,10 @@ btn.addEventListener('click', function send(e) {
         email.classList.add('alert');
         mail.classList.add('display')
         password.classList.add('error');
-        alert.classList.add('error');
+        alert_name.classList.add('display')
+        alert_lname.classList.add('display')
+        alert_email.classList.add('display')
+        alert_password.classList.add('display')
     e.preventDefault();
 
 })
